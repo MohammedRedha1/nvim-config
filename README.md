@@ -6,14 +6,14 @@ You are expected to get something like this `git version 2.45.0`. If not, then y
 
 [Install git](https://git-scm.com/downloads)
 ## 1. Get the configuration on Linux/Mac
-Copy the following in your terminal
+Copy the following into your terminal
 
     mkdir -p ~/.config/nvim
     cd ~/.config/nvim
     git clone https://github.com/MohammedRedha1/nvim-config.git .
 
 ## 2. Get the configuration on windows
-Copy the following in your PowerShell/Command prompt
+Copy the following into your PowerShell/Command prompt
 
     cd %userprofile%\AppData\Local\nvim
     git clone https://github.com/MohammedRedha1/nvim-config.git .
