@@ -21,3 +21,18 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+-- Custom navigation
+keymap.set("v", "ee", "G", { desc = "Go to the end of the file" })
+keymap.set("n", "ee", "G", { desc = "Go to the end of the file" })
+
+keymap.set("n", "tt", "gg", { desc = "Go to the top of the file" })
+keymap.set("v", "tt", "gg", { desc = "Go to the top of the file" })
+
+keymap.set("n", "<leader>le", "$", { desc = "Go to the end of the current line" })
+keymap.set("v", "<leader>le", "$", { desc = "Go to the end of the current line" })
+
+keymap.set("n", "<leader>ls", "0", { desc = "Go to the start of the current line" })
+keymap.set("v", "<leader>ls", "0", { desc = "Go to the start of the current line" })
+
+-- Custom commands for speed
+keymap.set("n", "<C-s>", ":w<CR>") -- save the file
