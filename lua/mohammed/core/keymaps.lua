@@ -4,6 +4,10 @@ local keymap = vim.keymap -- for conciseness
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+local keymap = vim.keymap -- for conciseness
+
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- increment/decrement numbers
@@ -24,15 +28,23 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- Custom navigation
 keymap.set("v", "ee", "G", { desc = "Go to the end of the file" })
 keymap.set("n", "ee", "G", { desc = "Go to the end of the file" })
+keymap.set("n", "yee", "yG", { desc = "Copy to the end of the file" })
+keymap.set("n", "dee", "dG", { desc = "Delete to the end of the file" })
 
 keymap.set("n", "tt", "gg", { desc = "Go to the top of the file" })
 keymap.set("v", "tt", "gg", { desc = "Go to the top of the file" })
+keymap.set("n", "ytt", "ygg", { desc = "Copy to the top of the file" })
+keymap.set("n", "dtt", "dgg", { desc = "Delete the top of the file" })
 
 keymap.set("n", "<leader>le", "$", { desc = "Go to the end of the current line" })
 keymap.set("v", "<leader>le", "$", { desc = "Go to the end of the current line" })
+keymap.set("n", "y<leader>le", "y$", { desc = "Copy to the end of the current line" })
+keymap.set("n", "d<leader>le", "d$", { desc = "Delete to the end of the current line" })
 
 keymap.set("n", "<leader>ls", "0", { desc = "Go to the start of the current line" })
 keymap.set("v", "<leader>ls", "0", { desc = "Go to the start of the current line" })
+keymap.set("n", "y<leader>ls", "y0", { desc = "Copy to the start of the current line" })
+keymap.set("n", "d<leader>ls", "d0", { desc = "Delete to the start of the current line" })
 
 -- Custom commands for speed
 keymap.set("n", "<C-s>", ":w<CR>") -- save the file
