@@ -43,7 +43,7 @@ keymap.set({ "n", "v" }, "<leader>ls", "0", { desc = "Go to the start of the cur
 keymap.set("n", "y<leader>ls", "y0", { desc = "Copy to the start of the current line" })
 keymap.set("n", "d<leader>ls", "d0", { desc = "Delete to the start of the current line" })
 
-keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz") -- center th cursor automatically
-keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz") -- center th cursor automatically
+keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz") -- center the cursor automatically
+keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz") -- center the cursor automatically
 -- Custom commands for speed
 keymap.set("n", "<C-s>", ":w<CR>") -- save the file
