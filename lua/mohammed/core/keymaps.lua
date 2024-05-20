@@ -47,3 +47,4 @@ keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz") -- center the cursor automatically
 keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz") -- center the cursor automatically
 -- Custom commands for speed
 keymap.set("n", "<C-s>", ":w<CR>") -- save the file
+keymap.set("i", "<C-s>", "<Esc>:w<CR>a")
