@@ -1,8 +1,12 @@
 return {
 	-- "neanias/everforest-nvim",
 	-- "dgox16/oldworld.nvim",
-	"luisiacc/gruvbox-baby",
+	"catppuccin/nvim",
+	-- "ellisonleao/gruvbox.nvim",
 	config = function()
-		vim.cmd("colorscheme gruvbox-baby")
+		vim.cmd("colorscheme catppuccin")
+		require("catppuccin").setup({
+			transparent_background = true,
+		})
 	end,
 }
