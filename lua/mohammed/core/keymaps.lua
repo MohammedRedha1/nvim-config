@@ -21,6 +21,16 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
+-- move between panes
+keymap.set("n", "<A-h>", ":wincmd h<CR>")
+keymap.set("n", "<A-k>", ":wincmd k<CR>")
+keymap.set("n", "<A-j>", ":wincmd j<CR>")
+keymap.set("n", "<A-l>", ":wincmd l<CR>")
+
+keymap.set("i", "<A-h>", "<Esc>:wincmd h<CR>")
+keymap.set("i", "<A-k>", "<Esc>:wincmd k<CR>")
+keymap.set("i", "<A-j>", "<Esc>:wincmd j<CR>")
+keymap.set("i", "<A-l>", "<Esc>:wincmd l<CR>")
 -- Custom motions
 keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz") -- center the cursor automatically
 keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz") -- center the cursor automatically
