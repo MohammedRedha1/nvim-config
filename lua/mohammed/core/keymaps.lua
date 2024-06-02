@@ -40,3 +40,7 @@ keymap.set("i", "<C-s>", "<Esc>:w<CR>a")
 
 -- Fix original commands
 keymap.set({ "n", "i", "v" }, "<C-z>", "")
+
+-- language specific keymaps
+-- GO:
+keymap.set("n", "<leader>ee", "oif error != nil {\n\treturn error\n}<ESC>")
